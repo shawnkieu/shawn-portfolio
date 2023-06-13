@@ -1,0 +1,740 @@
+{%load static%}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shawn Kieu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="{%static 'css/homepage.css'%}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+  	<header class="header" id="header">
+  		<nav class="nav container">
+		  <a href="#" class="nav__logo">Shawn Kieu</a>
+		  <div class="nav__menu">
+		    <ul class="nav__list">
+
+		      <li class="nav__item">
+		        <a href="#home" data-bs-target="#myCarousel" data-bs-slide-to="0" class="nav__link active-link">
+		          <i class='bx bx-home-alt'></i>
+		        </a>
+		      </li>
+
+		      <li class="nav__item">
+		        <a href="#about" data-bs-target="#myCarousel" data-bs-slide-to="1" class="nav__link">
+		          <i class='bx bx-user'></i>
+		        </a>
+		      </li>
+
+		      <li class="nav__item">
+		        <a href="#skills" data-bs-target="#myCarousel" data-bs-slide-to="2" class="nav__link">
+		          <i class='bx bx-book-alt'></i>
+		        </a>
+		      </li>
+
+		      <li class="nav__item">
+		        <a href="#work" data-bs-target="#myCarousel" data-bs-slide-to="3" class="nav__link">
+		          <i class='bx bx-briefcase-alt'></i>
+		        </a>
+		      </li>
+
+		      <li class="nav__item">
+		        <a href="#contact" data-bs-target="#myCarousel" data-bs-slide-to="4" class="nav__link">
+		          <i class='bx bx-message-square-detail'></i>
+		        </a>
+		      </li>
+		    </ul>
+		  </div>
+
+		  <!-- Theme Change Button -->
+		  <i class='bx bx-moon change-theme' id="theme-button"></i>
+		</nav>
+  	</header>
+
+  	<main class="main">
+  		<div id="myCarousel" class="carousel slide">
+		  <div class="carousel-inner">
+		  	<!-- Home -->
+		    <div class="carousel-item active">
+		    	<section class="home section" id="home">
+				  <div class="home__container container grid">
+				    <div class="home__data">
+				      <span class="home__greeting">Hello I'm</span>
+				      <h1 class="home__name">Shawn Kieu</h1>
+				      <h3 class="home__education">Technical Support Specialist</h3>
+				      <div class="home__buttons">
+				        <a download="" href="#" class="button button--ghost">
+				          Download Resume
+				        </a>
+
+				        <a href="#about" class="button">
+				          About me
+				        </a>
+				      </div>
+				    </div>
+				    <div class="home__handle">
+				      <img src="" alt="" class="home__img">
+				    </div>
+
+				    <div class="home__social">
+				      <a href="https://www.linkedin.com/in/huy-kieu-a21b64162/" target="_blank" class="home__social-link">
+				        <i class='bx bxl-linkedin-square'></i>
+				      </a>
+				      <a href="https://github.com/shawnkieu" target="_blank" class="home__social-link">
+				        <i class='bx bxl-github'></i>
+				      </a>
+				      <a href="https://www.facebook.com/qhuy.kieu/" target="_blank" class="home__social-link">
+				        <i class='bx bxl-facebook-square'></i>
+				      </a>
+				    </div>
+
+				    <a href="#about" class="home__scroll" style="display: none;">
+				      <i class='bx bx-mouse home__scroll-icon'></i>
+				      <span class="home__scroll-name">Scroll Down</span>
+				    </a>
+				  </div>
+				</section>
+		    </div>
+		    <!-- About -->
+		    <div class="carousel-item">
+		      	<!-- ABOUT -->
+			    <section class="about section" id="about">
+			      <span class="section__subtitle">My Intro</span>
+			      <h2 class="section__title">About Me</h2>
+
+			      <div class="about__container container grid">
+			        <img src="{%static 'img/potrait1.jpg'%}" alt="" class="about__img">
+
+			        <div class="about__data">
+			          <div class="about__info row">
+
+			            <div class="about__box col">
+			              <i class='bx bx-award about__icon'></i>
+			              <h3 class="about__title">Experience</h3>
+			              <span class="about__subtitle">4.5 Years Working</span>
+			            </div>
+
+			            <div class="about__box col">
+			              <i class='bx bx-briefcase-alt about__icon'></i>
+			              <h3 class="about__title">Completed</h3>
+			              <span class="about__subtitle">8 Projects</span>
+			            </div>
+
+			            <div class="about__box col">
+			              <i class='bx bx-support about__icon'></i>
+			              <h3 class="about__title">Support</h3>
+			              <span class="about__subtitle">Online 24/7</span>
+			            </div>
+			          </div>
+			          <p class="about__description">
+			            Technical Support, Backend Developer, I'm working my way to advance in SaaS and Cloud Service field.
+			          </p>
+			          <a href="#contact" class="button">Contact Me</a>
+			        </div>
+			      </div>
+			    </section>
+		    </div>
+		    <!-- Skill -->
+		    <div class="carousel-item">
+		      <section class="skills section" id="skills">
+			      <span class="section__subtitle">My Ability</span>
+			      <h2 class="section__title">My Experience</h2>
+
+			      <div class="skills__container container grid">
+			        <div class="skills_content">
+			          <h3 class="skills__title">Technical Support Leader - Dicentral - True Commerce</h3>
+
+			          <div class="skills__box">
+			            <div class="skills__group">
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">EDI Integration</h3>
+			                  <span class="skills__level">Advanced</span>
+			                </div>
+			              </div>
+
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">EDI Integration Mapping</h3>
+			                  <span class="skills__level">Advanced</span>
+			                </div>
+			              </div>
+			            </div>
+			            <div class="skills__group">
+
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">MySQL</h3>
+			                  <span class="skills__level">Intermediate</span>
+			                </div>
+			              </div>
+
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">PowerShell Scripting</h3>
+			                  <span class="skills__level">Intermediate</span>
+			                </div>
+			              </div>
+
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">Unit Test</h3>
+			                  <span class="skills__level">Intermediate</span>
+			                </div>
+			              </div>
+			            </div>
+
+			            <div class="skills__group">
+
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">Internal CRM Ticket System</h3>
+			                  <span class="skills__level">Intermediate</span>
+			                </div>
+			              </div>
+
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">Customer Communication</h3>
+			                  <span class="skills__level">Intermediate</span>
+			                </div>
+			              </div>
+			            </div>
+			          </div>
+			        </div>
+
+			        <div class="skills_content">
+			          <h3 class="skills__title">Data Analyst - Appen</h3>
+
+			          <div class="skills__box">
+			            <div class="skills__group">
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">Python</h3>
+			                  <span class="skills__level">Advanced</span>
+			                </div>
+			              </div>
+
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">Django Framework</h3>
+			                  <span class="skills__level">Intermediate</span>
+			                </div>
+			              </div>
+
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">Git Version Control</h3>
+			                  <span class="skills__level">Basic</span>
+			                </div>
+			              </div>
+			            </div>
+			            <div class="skills__group">
+
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">MySQL, Postgres, MongoDB</h3>
+			                  <span class="skills__level">Intermediate</span>
+			                </div>
+			              </div>
+
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">Linux Shell Scripting</h3>
+			                  <span class="skills__level">Intermediate</span>
+			                </div>
+			              </div>
+
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">Pandas</h3>
+			                  <span class="skills__level">Intermediate</span>
+			                </div>
+			              </div>
+
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">Visualization</h3>
+			                  <span class="skills__level">Intermediate</span>
+			                </div>
+			              </div>
+			            </div>
+			          </div>
+			        </div>
+
+			        <div class="skills_content">
+			          <h3 class="skills__title">Technical Support Specialist - Insider</h3>
+
+			          <div class="skills__box">
+			            <div class="skills__group">
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">HTML, CSS</h3>
+			                  <span class="skills__level">Advanced</span>
+			                </div>
+			              </div>
+
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">Javascript</h3>
+			                  <span class="skills__level">Intermediate</span>
+			                </div>
+			              </div>
+
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">Docker</h3>
+			                  <span class="skills__level">Basic</span>
+			                </div>
+			              </div>
+			            </div>
+			            <div class="skills__group">
+
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">MySQL, Postgres, MongoDB</h3>
+			                  <span class="skills__level">Intermediate</span>
+			                </div>
+			              </div>
+
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">Shell Scripting</h3>
+			                  <span class="skills__level">Intermediate</span>
+			                </div>
+			              </div>
+
+			            </div>
+			            <div class="skills__group">
+
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">Zendesk Ticket System</h3>
+			                  <span class="skills__level">Intermediate</span>
+			                </div>
+			              </div>
+
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">Jira</h3>
+			                  <span class="skills__level">Intermediate</span>
+			                </div>
+			              </div>
+
+			            </div>
+			          </div>
+			        </div>
+
+			        <div class="skills_content">
+			          <h3 class="skills__title">Technical Support Leader - ItechWX - Shanghai WicreSoft</h3>
+
+			          <div class="skills__box">
+			            <div class="skills__group">
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">PowerShell Scripting</h3>
+			                  <span class="skills__level">Advanced</span>
+			                </div>
+			              </div>
+
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">DevOps</h3>
+			                  <span class="skills__level">Intermediate</span>
+			                </div>
+			              </div>
+
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">Azure Cloud Service</h3>
+			                  <span class="skills__level">Intermediate</span>
+			                </div>
+			              </div>
+			            </div>
+			            <div class="skills__group">
+
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">MySQL</h3>
+			                  <span class="skills__level">Intermediate</span>
+			                </div>
+			              </div>
+
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">Shell Scripting</h3>
+			                  <span class="skills__level">Intermediate</span>
+			                </div>
+			              </div>
+
+			            </div>
+			            <div class="skills__group">
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">Dynamics 365</h3>
+			                  <span class="skills__level">Intermediate</span>
+			                </div>
+			              </div>
+
+			              <div class="skills__data">
+			                <i class='bx bxs-badge-check'></i>
+			                <div>
+			                  <h3 class="skills__name">Rave Ticket System</h3>
+			                  <span class="skills__level">Intermediate</span>
+			                </div>
+			              </div>
+
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+			    </section>
+		    </div>
+		    <!-- Services -->
+		    <div class="carousel-item">
+		      <section class="services section">
+		        <span class="section__subtitle">My Services</span>
+		        <h2 class="section__title">What I offer</h2>
+
+		        <div class="services__container container grid">
+		          <div class="services__card">
+		            <h3 class="services__title">
+		              Technical <br />
+		              Support
+		            </h3>
+
+		            <span class="services__button">
+		              see more <i class="bx bx-right-arrow-alt services__icon"></i>
+		            </span>
+
+		            <div class="services__modal">
+		              <div class="services__modal-content">
+		                <i class="bx bx-x services__modal-close"></i>
+		                <h3 class="services__modal-title">Technical Support</h3>
+		                <p class="services__modal-description">
+		                  During the time I work at Di Central as a Technical Support I developed analytics insight for most of the scenarios for all sort type of files (XML, IDOC, CSV, etc.), type of transmission.                  
+		                </p>
+
+		                <ul class="services__modal-list">
+		                  <li class="services__modal-item">
+		                    <i class="bx bx-check services__modal-icon"></i>
+		                    <p class="services__modal-info">Developed EDI knowledge on Cloud Interchange Platform, AS2 server and FTP server pipeline.</p>
+		                  </li>
+		                  <li class="services__modal-item">
+		                    <i class="bx bx-check services__modal-icon"></i>
+		                    <p class="services__modal-info">Contribute in many solution projects as mapping specialist and Data pipeline consultant.</p>
+		                  </li>
+		                  <li class="services__modal-item">
+		                    <i class="bx bx-check services__modal-icon"></i>
+		                    <p class="services__modal-info">Directly support Groupe SEB on Shopify and SAP integration add-ons.</p>
+		                  </li>
+		                  <li class="services__modal-item">
+		                    <i class="bx bx-check services__modal-icon"></i>
+		                    <p class="services__modal-info">Directly support Daikin, Cao Phong on E-Invoice platform.</p>
+		                  </li>
+		                  <li class="services__modal-item">
+		                    <i class="bx bx-check services__modal-icon"></i>
+		                    <p class="services__modal-info">
+		                      Build automation tools to minimize teams' tasks.
+		                    </p>
+		                  </li>
+		                </ul>
+		              </div>
+		            </div>
+		          </div>
+
+		          <div class="services__card">
+		            <h3 class="services__title">
+		              Data <br />
+		              Analyst
+		            </h3>
+
+		            <span class="services__button">
+		              see more <i class="bx bx-right-arrow-alt services__icon"></i>
+		            </span>
+		            <div class="services__modal">
+		              <div class="services__modal-content">
+		                <i class="bx bx-x services__modal-close"></i>
+		                <h3 class="services__modal-title">Data Analyst</h3>
+		                <p class="services__modal-description">
+		                  After spending years working in EDI industry, I find myself interested in the data workflow and how the integration was configured in companies that have a large amount of data. I applied for the Data Analyst - Remote at Appen. In Appen I was able to:
+		                </p>
+
+		                <ul class="services__modal-list">
+		                  <li class="services__modal-item">
+		                    <i class="bx bx-check services__modal-icon"></i>
+		                    <p class="services__modal-info">Conducted comprehensive data analysis using SQL and Python, transforming raw data into meaningful insights and actionable recommendations that led to a 15% increase in customer retention</p>
+		                  </li>
+		                  <li class="services__modal-item">
+		                    <i class="bx bx-check services__modal-icon"></i>
+		                    <p class="services__modal-info">Developed interactive dashboards in PowerBI, presenting key performance indicators and data visualizations that facilitated data-driven decision-making and improved operational efficiency by 5%</p>
+		                  </li>
+		                  <li class="services__modal-item">
+		                    <i class="bx bx-check services__modal-icon"></i>
+		                    <p class="services__modal-info">Presented data findings to executive leadership through visually appealing presentations, enabling stakeholders to make informed decisions and resulting in a 3% increase in marketing campaign effectiveness.</p>
+		                  </li>
+		                  <li class="services__modal-item">
+		                    <i class="bx bx-check services__modal-icon"></i>
+		                    <p class="services__modal-info">Worked closely with the marketing team to analyze customer segmentation data, enabling targeted marketing campaigns.</p>
+		                  </li>
+		                </ul>
+		              </div>
+		            </div>
+		          </div>
+
+		          <div class="services__card">
+		            <h3 class="services__title">
+		              Lead Tech <br />
+		              Support
+		            </h3>
+
+		            <span class="services__button">
+		              see more <i class="bx bx-right-arrow-alt services__icon"></i>
+		            </span>
+		            <div class="services__modal">
+		              <div class="services__modal-content">
+		                <i class="bx bx-x services__modal-close"></i>
+		                <h3 class="services__modal-title">Lead Technical Support</h3>
+		                <p class="services__modal-description">
+		                  During the time I was working at Dicentral, I was appointed to be the Lead of Technical Support Team.
+		                  And again working as Leader role at ItechWX in late 2022.
+		                </p>
+
+		                <ul class="services__modal-list">
+		                  <li class="services__modal-item">
+		                    <i class="bx bx-check services__modal-icon"></i>
+		                    <p class="services__modal-info">Managed and supervised a team of 15 technical support specialists, providing guidance, coaching, and mentoring to ensure high levels of performance and customer satisfaction.</p>
+		                  </li>
+		                  <li class="services__modal-item">
+		                    <i class="bx bx-check services__modal-icon"></i>
+		                    <p class="services__modal-info">Managed and resolved complex customer issues, working closely with team members and other departments to ensure prompt and satisfactory resolutions, resulting in a 15% decrease in customer unsatisfied survey in year 2020.</p>
+		                  </li>
+		                  <li class="services__modal-item">
+		                    <i class="bx bx-check services__modal-icon"></i>
+		                    <p class="services__modal-info">Implemented a knowledge base system and streamlined support processes with Microsoft PowerAutomate, resulting in a 19% reduction in average handling time and improved first-call resolution rate by 14%.</p>
+		                  </li>
+		                  <li class="services__modal-item">
+		                    <i class="bx bx-check services__modal-icon"></i>
+		                    <p class="services__modal-info">Implemented performance tracking mechanisms and conducted regular analysis of metrics, providing actionable insights to improve team performance and reduce response time by 15%.</p>
+		                  </li>
+		                  <li class="services__modal-item">
+		                    <i class="bx bx-check services__modal-icon"></i>
+		                    <p class="services__modal-info">
+		                      Collaborated with the product development team to provide feedback on customer pain points, resulting in the implementation of several product enhancements and increased customer satisfaction by 5%.
+		                    </p>
+		                  </li>
+		                  <li class="services__modal-item">
+		                    <i class="bx bx-check services__modal-icon"></i>
+		                    <p class="services__modal-info">
+		                      Designed and delivered comprehensive technical training programs to improve team members' troubleshooting skills, resulting in a 20% reduction in escalations to higher-level support teams.
+		                    </p>
+		                  </li>
+		                </ul>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		      </section>
+
+		      <!-- WORK -->
+		      <section class="work section" id="work">
+		        <span class="section__subtitle">My portfolio</span>
+		        <h2 class="section__title">Recent Works</h2>
+
+		        <div class="work__filters">
+		          <span class="work__item active-work" data-filter="all">All</span>
+		          <span class="work__item" data-filter=".web">CRM</span>
+		          <span class="work__item" data-filter=".chat">Chat Platform</span>
+		          <span class="work__item" data-filter=".shop">E-Commerce</span>
+		        </div>
+
+		        <div class="work__container container grid">
+		          <div class="work__card mix web">
+		            <img src="{%static 'img/CRM.png'%}" alt="" class="work__img" />
+
+		            <h3 class="work__title">CRM</h3>
+
+		            <a href="https://github.com/shawnkieu/djangocrm" class="work__button">
+		              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+		            </a>
+		          </div>
+
+		          <div class="work__card mix chat">
+		            <img src="{%static 'img/ChatRoom.png'%}" alt="" class="work__img" />
+
+		            <h3 class="work__title">Chat Platform</h3>
+
+		            <a href="https://github.com/shawnkieu/ChatRoom" class="work__button">
+		              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+		            </a>
+		          </div>
+
+		          <div class="work__card mix shop">
+		            <img src="{%static 'img/shop.png'%}" alt="" class="work__img" />
+
+		            <h3 class="work__title">Shopaholic</h3>
+
+		            <a href="https://github.com/shawnkieu/shopaholic" class="work__button">
+		              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
+		            </a>
+		          </div>
+		        </div>
+		      </section>
+		    </div>
+		    <!-- Contact -->
+		    <div class="carousel-item">
+		      <section class="contact section" id="contact">
+		        <span class="section__subtitle">Get in touch</span>
+		        <h2 class="section__title">Contact Me</h2>
+
+		        <div class="contact__container container grid">
+		          <div class="contact__content">
+		            <h3 class="contact__title">Talk to me</h3>
+
+		            <div class="contact__info">
+		              <div class="contact__card">
+		                <i class="bx bx-mail-send contact__card-icon"></i>
+		                <h3 class="contact__card-title">Email</h3>
+		                <span class="contact__card-data">kieuqhuy@gmail.com</span>
+
+		                <a href="mailto:kieuqhuy@gmail.com" target="_blank" class="contact__button">
+		                  Write me <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+		                </a>
+		              </div>
+
+		              <div class="contact__card">
+		                <i class="bx bxl-whatsapp contact__card-icon"></i>
+		                <h3 class="contact__card-title">Whatsapp</h3>
+		                <span class="contact__card-data">+84937387085</span>
+
+		                <a
+		                  href="https://api.whatsapp.com/send?phone=+84937387085&text=Hello, more information!"
+		                  target="_blank"
+		                  class="contact__button"
+		                >
+		                  Write me <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+		                </a>
+		              </div>
+
+		              <div class="contact__card">
+		                <i class="bx bxl-messenger contact__card-icon"></i>
+		                <h3 class="contact__card-title">Messenger</h3>
+		                <span class="contact__card-data">Quang Huy</span>
+
+		                <a href="https://m.me/qhuy.kieu" target="_blank" class="contact__button">
+		                  Write me <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+		                </a>
+		              </div>
+		            </div>
+		          </div>
+
+		          <div class="contact__content">
+		            <h3 class="contact__title">Write me your project</h3>
+
+		            <form action="{%url 'contact_form'%}" method="post" class="contact__form">
+		            	{%csrf_token%}
+		              <div class="contact__form-div">
+		                <label for="" class="contact__form-tag">Names</label>
+		                <input type="text" name="name" placeholder="Insert your name" class="contact__form-input" required/>
+		              </div>
+
+		              <div class="contact__form-div">
+		                <label for="" class="contact__form-tag">Mail</label>
+		                <input type="text" name="email" placeholder="Insert your email" class="contact__form-input" required/>
+		              </div>
+
+		              <div class="contact__form-div contact__form-area">
+		                <label for="" class="contact__form-tag">Information</label>
+		                <textarea
+		                  name="message"
+		                  id=""
+		                  cols="30"
+		                  rows="10"
+		                  placeholder="Write your information"
+		                  class="contact__form-input"
+		                ></textarea>
+		              </div>
+
+		              <button type="submit" class="button">Send Message</a>
+		            </form>
+		          </div>
+		        </div>
+		      </section>
+
+		      <!-- Footer -->
+			  	<footer class="footer">
+			      <div class="footer__container container">
+			        <h1 class="footer__title">Shawn Kieu</h1>
+			        <ul class="footer__list">
+			          <li>
+			            <a href="#about" data-bs-target="#myCarousel" data-bs-slide-to="1" class="footer__link">About</a>
+			          </li>
+
+			          <li>
+			            <a href="#work" data-bs-target="#myCarousel" data-bs-slide-to="3" class="footer__link">Projects</a>
+			          </li>
+
+			          <li>
+			            <a href="" data-bs-target="#myCarousel" data-bs-slide-to="2" class="footer__link">Experience</a>
+			          </li>
+			        </ul>
+
+			        <ul class="footer__social">
+			          <a href="https://www.facebook.com/qhuy.kieu/" target="" class="footer__social-link"
+			            ><i class="bx bxl-facebook"></i
+			          ></a>
+			          <a href="https://www.instagram.com/" target="" class="footer__social-link"
+			            ><i class="bx bxl-instagram"></i
+			          ></a>
+			          <a href="https://twitter.com/" target="" class="footer__social-link"
+			            ><i class="bx bxl-twitter"></i
+			          ></a>
+			        </ul>
+
+			        <span class="footer__copy"> &#169; Shawn Kieu </span>
+			      </div>
+			    </footer>
+		    </div>
+		  </div>
+		</div>
+  	</main>
+  	
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{%static 'js/mixitup.min.js'%}"></script>
+    <script src="{%static 'js/main.js'%}"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  </body>
+</html>
